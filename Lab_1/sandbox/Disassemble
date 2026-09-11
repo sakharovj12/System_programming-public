@@ -1,3 +1,23 @@
+Dump of assembler code for function _start:
+   0x08049034 <+0>:	mov    $0x4,%eax
+   0x08049039 <+5>:	mov    $0x1,%ebx
+   0x0804903e <+10>:	mov    $0x8049000,%ecx
+   0x08049043 <+15>:	mov    $0xf,%edx
+   0x08049048 <+20>:	int    $0x80
+   0x0804904a <+22>:	mov    $0x4,%eax
+   0x0804904f <+27>:	mov    $0x1,%ebx
+   0x08049054 <+32>:	mov    $0x8049010,%ecx
+   0x08049059 <+37>:	mov    $0xd,%edx
+   0x0804905e <+42>:	int    $0x80
+   0x08049060 <+44>:	mov    $0x4,%eax
+   0x08049065 <+49>:	mov    $0x1,%ebx
+   0x0804906a <+54>:	mov    $0x804901e,%ecx
+   0x0804906f <+59>:	mov    $0x15,%edx
+   0x08049074 <+64>:	int    $0x80
+   0x08049076 <+66>:	mov    $0x1,%eax
+   0x0804907b <+71>:	mov    $0x0,%ebx
+   0x08049080 <+76>:	int    $0x80
+End of assembler dump.
 
 This GDB supports auto-downloading debuginfo from the following URLs:
   <https://debuginfod.ubuntu.com>

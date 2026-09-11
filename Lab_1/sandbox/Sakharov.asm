@@ -1,12 +1,10 @@
-format ELF executable 32
+format ELF
 public _start
 
-section '.data' clickable writeable
 firstname db "Сахаров", 0xA, 0
 name db "Андрей", 0xA, 0
 fathername db "Алексеевич", 0xA, 0
 
-section '.text' executable
 _start:
     mov eax, 4
     mov ebx, 1
