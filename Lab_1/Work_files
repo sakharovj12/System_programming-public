@@ -1,0 +1,16 @@
+touch Work_files
+mkdir -p Work/"Лабораторная работа №1!" Work/Sakharov_A_A
+chmod 772 Work/"Лабораторная работа №1!"
+chmod 200 Work/Sakharov_A_A
+touch Work/Text\ \@1 Work/Text\ \$2 Work/Text\ \#3
+printf "Птица говорун отличается умом и сообразительностью!\nОтличается умом, отличается сообразительностью...\n" > Work/Text\ \@1
+cat Work/Text\ \@1 > Work/Text\ \$2
+mv Work/Text\ \$2 Work/"Лабораторная работа №1!"/
+chmod 700 Work/Sakharov_A_A && cp Work/Text\ \@1 Work/Sakharov_A_A/ && chmod 200 Work/Sakharov_A_A
+gzip -k Work/Text\ \@1 && gzip -k Work/Text\ \#3 && tar -cvf MyAchiv.tar Work/Text\ \@1.gz Work/Text\ \#3.gz
+head -n 1 Work/Text\ \@1 > Work/Text\ \#3 && printf "Будь осторожен! Преступник вооружен!\n" >> Work/Text\ \#3
+chmod 700 Work/Sakharov_A_A && tac Work/Text\ \@1 > Work/Sakharov_A_A/Result_one && chmod 200 Work/Sakharov_A_A
+chmod 700 Work/Sakharov_A_A && mv Work/Sakharov_A_A/Result_one Work/Sakharov_A_A/Result_two && chmod 200 Work/Sakharov_A_A
+cat Work/Sakharov_A_A/Text\ \@1 > Work/"Лабораторная работа №1!"/Result_3
+uname -a >> Work/"Лабораторная работа №1!"/Result_3 && date >> Work/"Лабораторная работа №1!"/Result_3
+mkdir Lab_1 && mv sandbox Work Work_files Lab_1/
