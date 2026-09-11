@@ -1,38 +1,31 @@
-format ELF executable 3
-entry start
+format ELF executable 32
+public _start
 
-segment readable executable
-start:
-    ; Вывод фамилии
+section '.data' clickable writeable
+firstname db "Сахаров", 0xA, 0
+name db "Андрей", 0xA, 0
+fathername db "Алексеевич", 0xA, 0
+
+section '.text' executable
+_start:
     mov eax, 4
     mov ebx, 1
-    mov ecx, surname
-    mov edx, surname_len
+    mov ecx, firstname
+    mov edx, 15
     int 0x80
 
-    ; Вывод имени
     mov eax, 4
     mov ebx, 1
     mov ecx, name
-    mov edx, name_len
+    mov edx, 13
     int 0x80
 
-    ; Вывод отчества
     mov eax, 4
     mov ebx, 1
-    mov ecx, patronymic
-    mov edx, patronymic_len
+    mov ecx, fathername
+    mov edx, 21
     int 0x80
 
-    ; Выход
     mov eax, 1
-    xor ebx, ebx
+    mov ebx, 0
     int 0x80
-
-segment readable writeable
-    surname      db 'Sakharov', 10
-    surname_len  = $ - surname
-    name         db 'Andrey', 10
-    name_len     = $ - name
-    patronymic   db 'Alekseevich', 10
-    patronymic_len = $ - patronymic
