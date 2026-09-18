@@ -1,29 +1,18 @@
-format ELF
-public _start
+format ELF executable 3
+entry _start
 
-firstname db "Сахаров", 0xA, 0
-name db "Андрей", 0xA, 0
-fathername db "Алексеевич", 0xA, 0
-
+segment readable executable
 _start:
     mov eax, 4
     mov ebx, 1
-    mov ecx, firstname
-    mov edx, 16
-    int 0x80
-
-    mov eax, 4
-    mov ebx, 1
-    mov ecx, name
-    mov edx, 14
-    int 0x80
-
-    mov eax, 4
-    mov ebx, 1
-    mov ecx, fathername
-    mov edx, 22
+    mov ecx, msg
+    mov edx, msg_len
     int 0x80
 
     mov eax, 1
-    mov ebx, 0
+    xor ebx, ebx
     int 0x80
+
+segment readable writeable
+msg db 'Sakharov', 10, 'Andrey', 10, 'Alekseevich', 10
+msg_len = $ - msg
