@@ -1,0 +1,19 @@
+fasm Sakharov.asm Sakharov
+gcc -m32 C_version.c -o C_version
+gdb -batch -ex "file Sakharov" -ex "disassemble start" > Disassemble
+mkdir -p Work/"Лабораторная работа №1!" Work/Sakharov_A_A
+chmod 772 "Work/Лабораторная работа №1!"
+chmod 200 Work/Sakharov_A_A
+echo "Птица говорун..." > "Work/Text @1"
+cp "Work/Text @1" "Work/Text \$2"
+mv "Work/Text \$2" "Work/Лабораторная работа №1!"
+cp "Work/Text @1" Work/Sakharov_A_A/
+gzip -k "Work/Text @1" "Work/Text #3"
+tar -cvf Work/MyAchiv.tar "Work/Text @1.gz" "Work/Text #3.gz"
+head -n 1 "Work/Text @1" > "Work/Text #3"
+echo "Будь осторожен! Преступник вооружен!" >> "Work/Text #3"
+tac "Work/Text @1" > Work/Sakharov_A_A/Result_one
+mv Work/Sakharov_A_A/Result_one Work/Sakharov_A_A/Result_two
+ls Work/Sakharov_A_A/ | grep "^T" > "Work/Лабораторная работа №1!/Result_3"
+uname -a >> "Work/Лабораторная работа №1!/Result_3"
+date >> "Work/Лабораторная работа №1!/Result_3"
