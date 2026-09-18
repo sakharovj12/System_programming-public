@@ -1,23 +1,26 @@
+=== DISASSEMBLE SAKHAROV ===
 Dump of assembler code for function _start:
-   0x08049034 <+0>:	mov    $0x4,%eax
-   0x08049039 <+5>:	mov    $0x1,%ebx
-   0x0804903e <+10>:	mov    $0x8049000,%ecx
-   0x08049043 <+15>:	mov    $0xf,%edx
-   0x08049048 <+20>:	int    $0x80
-   0x0804904a <+22>:	mov    $0x4,%eax
-   0x0804904f <+27>:	mov    $0x1,%ebx
-   0x08049054 <+32>:	mov    $0x8049010,%ecx
-   0x08049059 <+37>:	mov    $0xd,%edx
-   0x0804905e <+42>:	int    $0x80
-   0x08049060 <+44>:	mov    $0x4,%eax
-   0x08049065 <+49>:	mov    $0x1,%ebx
-   0x0804906a <+54>:	mov    $0x804901e,%ecx
-   0x0804906f <+59>:	mov    $0x15,%edx
-   0x08049074 <+64>:	int    $0x80
-   0x08049076 <+66>:	mov    $0x1,%eax
-   0x0804907b <+71>:	mov    $0x0,%ebx
-   0x08049080 <+76>:	int    $0x80
+   0x00000034 <+0>:	mov    $0x4,%eax
+   0x00000039 <+5>:	mov    $0x1,%ebx
+   0x0000003e <+10>:	mov    $0x0,%ecx
+   0x00000043 <+15>:	mov    $0x10,%edx
+   0x00000048 <+20>:	int    $0x80
+   0x0000004a <+22>:	mov    $0x4,%eax
+   0x0000004f <+27>:	mov    $0x1,%ebx
+   0x00000054 <+32>:	mov    $0x10,%ecx
+   0x00000059 <+37>:	mov    $0xe,%edx
+   0x0000005e <+42>:	int    $0x80
+   0x00000060 <+44>:	mov    $0x4,%eax
+   0x00000065 <+49>:	mov    $0x1,%ebx
+   0x0000006a <+54>:	mov    $0x1e,%ecx
+   0x0000006f <+59>:	mov    $0x16,%edx
+   0x00000074 <+64>:	int    $0x80
+   0x00000076 <+66>:	mov    $0x1,%eax
+   0x0000007b <+71>:	mov    $0x0,%ebx
+   0x00000080 <+76>:	int    $0x80
 End of assembler dump.
+
+=== DISASSEMBLE C_VERSION ===
 
 This GDB supports auto-downloading debuginfo from the following URLs:
   <https://debuginfod.ubuntu.com>

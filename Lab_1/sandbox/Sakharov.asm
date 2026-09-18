@@ -9,19 +9,19 @@ _start:
     mov eax, 4
     mov ebx, 1
     mov ecx, firstname
-    mov edx, 15
+    mov edx, 16
     int 0x80
 
     mov eax, 4
     mov ebx, 1
     mov ecx, name
-    mov edx, 13
+    mov edx, 14
     int 0x80
 
     mov eax, 4
     mov ebx, 1
     mov ecx, fathername
-    mov edx, 21
+    mov edx, 22
     int 0x80
 
     mov eax, 1
